@@ -32,10 +32,13 @@ sub verboseSystem {
 
     print $before if ($before);
     print $prefix . $command . "\n";
-    system($command);
+    my $ret = (system($command) == 0);
     print $after if ($after);
+    return $ret;
 }
 
 sub vsys {
     verboseSystem(@_);
 }
+
+1;
