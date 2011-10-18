@@ -5,6 +5,7 @@ my $build = Module::Build->new(
     dist_author     => 'Drew Stephens <drew@dinomite.net>',
     dist_abstract   => 'A verbose version of system()',
     create_readme   => 1,
+    create_license  => 1,
     requires        => {
         'perl'          => '5.8.8',
     },

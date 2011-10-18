@@ -8,30 +8,30 @@ Shell::Verbose - A verbose version of system()
 
 =head1 SYNOPSIS
 
-use Shell::Verbose qw/verboseSystem vsys/;
+    use Shell::Verbose qw/verboseSystem vsys/;
 
-verboseSystem('echo "foo"');
-# echo "foo"
-# foo
+    verboseSystem('echo "foo"');
+    # echo "foo"
+    # foo
 
-vyss('echo "foo"');
-# echo "foo"
-# foo
+    vsys('echo "foo"');
+    # echo "foo"
+    # foo
 
-Shell::Verbose->prefix('===> ');
-# ===> echo 'foo'
-# foo
+    Shell::Verbose->prefix('===> ');
+    # ===> echo 'foo'
+    # foo
 
-Shell::Verbose->before('Running the next line');
-# Running the next line
-# ===> echo 'foo'
-# foo
+    Shell::Verbose->before('Running the next line');
+    # Running the next line
+    # ===> echo 'foo'
+    # foo
 
-Shell::Verbose->after('That was easy');
-# Running the next line
-# ===> echo 'foo'
-# foo
-# That was easy
+    Shell::Verbose->after('That was easy');
+    # Running the next line
+    # ===> echo 'foo'
+    # foo
+    # That was easy
 
 =head1 DESCRIPTION
 
@@ -45,7 +45,7 @@ Drew Stephens <drew@dinomit.net>
 
 our ($VERSION, @ISA, @EXPORT_OK);
 BEGIN {
-    $VERSION = '1.02';
+    $VERSION = '0.1';
 
     require Exporter;
     @ISA = qw/Exporter/;
