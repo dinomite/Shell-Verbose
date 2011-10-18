@@ -19,10 +19,27 @@ vyss('echo "foo"');
 # foo
 
 Shell::Verbose->prefix('===> ');
+# ===> echo 'foo'
+# foo
+
+Shell::Verbose->before('Running the next line');
+# Running the next line
+# ===> echo 'foo'
+# foo
+
+Shell::Verbose->after('That was easy');
+# Running the next line
+# ===> echo 'foo'
+# foo
+# That was easy
 
 =head1 DESCRIPTION
 
 A simple wrapper for system() that prints the command
+
+=head1 AUTHOR
+
+Drew Stephens <drew@dinomit.net>
 
 =cut
 
