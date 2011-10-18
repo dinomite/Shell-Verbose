@@ -3,3 +3,5 @@ Changes
 lib/Shell/Verbose.pm
 MANIFEST			This list of files
 README
+LICENSE
+META.yml
