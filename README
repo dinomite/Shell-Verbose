@@ -30,6 +30,9 @@ SYNOPSIS
 DESCRIPTION
     A simple wrapper for system() that prints the command
 
+SOURCE
+    https://github.com/dinomite/Shell-Verbose
+
 AUTHOR
     Drew Stephens <drew@dinomite.net>
 
