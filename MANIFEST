@@ -1,6 +1,7 @@
 Build.PL
 Changes
 lib/Shell/Verbose.pm
+t/shell-verbose.t
 MANIFEST			This list of files
 README
 LICENSE
