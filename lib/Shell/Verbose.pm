@@ -39,13 +39,13 @@ A simple wrapper for system() that prints the command
 
 =head1 AUTHOR
 
-Drew Stephens <drew@dinomit.net>
+Drew Stephens <drew@dinomite.net>
 
 =cut
 
 our ($VERSION, @ISA, @EXPORT_OK);
 BEGIN {
-    $VERSION = '0.1';
+    $VERSION = '0.1.1';
 
     require Exporter;
     @ISA = qw/Exporter/;
