@@ -1,4 +1,5 @@
 {{$NEXT}}
+  - Correct return value
 
 0.2       2011-10-19 14:50:42 America/New_York
   - Use Dist::Zilla
