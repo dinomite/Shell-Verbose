@@ -3,4 +3,5 @@ Build
 MYMETA.yml
 Shell-Verbose-*
 _build
+.build
 .*.sw*
