@@ -44,14 +44,6 @@ Shell::Verbose - A verbose version of system()
 
 A simple wrapper for system() that prints the command
 
-=head1 SOURCE
-
-L<https://github.com/dinomite/Shell-Verbose>
-
-=head1 AUTHOR
-
-Drew Stephens <drew@dinomite.net>
-
 =head1 METHODS
 
 =cut
@@ -106,5 +98,15 @@ sub verboseSystem {
 sub vsys {
     verboseSystem(@_);
 }
+
+=head1 SOURCE
+
+L<https://github.com/dinomite/Shell-Verbose>
+
+=head1 AUTHOR
+
+Drew Stephens <drew@dinomite.net>
+
+=cut
 
 1;
