@@ -80,7 +80,7 @@ sub verboseSystem {
 
     print "$before\n" if ($before);
     print $prefix . $command . "\n";
-    my $ret = (system($command) == 0);
+    my $ret = (system($command) != 0);
     print "$after\n" if ($after);
     return $ret;
 }
