@@ -23,10 +23,10 @@ ok $stdout eq $expected;
 
 # Check the simplified return value
 my $ret = vsys("true");
-ok $ret == 0;
+ok $ret == 1;
 
 $ret = vsys("false");
-ok $ret == 1;
+ok $ret == 0;
 
 # Prefix
 Shell::Verbose->prefix('===> ');
