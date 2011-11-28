@@ -62,16 +62,19 @@ my $after = '';
 sub prefix {
     shift;
     $prefix = shift;
+    return $prefix
 }
 
 sub before {
     shift;
     $before = shift;
+    return $before;
 }
 
 sub after {
     shift;
-    $before = shift;
+    $after = shift;
+    return $after;
 }
 
 =head2 verboseSystem($command)

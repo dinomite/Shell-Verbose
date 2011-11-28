@@ -48,7 +48,7 @@ Shell::Verbose->before('');
 
 # After line
 Shell::Verbose->after('below');
-$expected = "below\necho 'foo'\nfoo\n";
+$expected = "echo 'foo'\nfoo\nbelow\n";
 ($stdout, $stderr) = capture {
     vsys("echo 'foo'");
 };
